@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* Header */
+.container {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-top: 0.6rem;
+}
+
+.container .logo {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2rem;
+}
+
+.container .menu_list ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.container .menu_list ul li {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: white;
+    filter:brightness(1.9);
+}
+
+   /* slideshow.css */
+.slideshow-container {
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    image-rendering: pixelated;
+    filter: contrast(1.5) brightness(0.8) saturate(1.2);
+  }
+  
+  .slide .slide-image:hover {
+    transform: scale(1.2);
+  }
+
+  .slide .text {
+    position: absolute;
+    left: 10%;
+    top: 26%;
+  }
+
+  .slide .text h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 0.6rem;
+    width: 10em;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 55px;
+  }
+
+  .slide .text p {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.558);
+  }
+
+  .smallerSlider {
+    position: absolute;
+    bottom: 4%;
+    left: 76%;
+    width: 20%;
+    height: 20%;
+    overflow: hidden;
+  }
+
+  .social_mediaIcons {
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    bottom: 4%;
+    left: 4%;
+    z-index: 1000;
+    display: flex;
+    gap: 1.2rem;
+    cursor: pointer;
+  }
